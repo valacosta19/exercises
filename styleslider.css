@@ -58,21 +58,11 @@ h1 {
     font-weight: bold;
 }
 
-@media screen and (max-width: 554px) {
-   h1{
-      font-size: 1.2rem;
-   }
-}
-
 p, button {
     margin: 10px;
     line-height: 30px;
     font-size: 0.75rem;
     letter-spacing: 0.5px;
-}
-
-@media screen and (max-width: 554px) {
-   p, button {font-size: 0.6rem;}
 }
 
 button {
@@ -186,17 +176,44 @@ button {
        margin: 0 auto;
     }
 
-    
-
-
-    @media screen and (max-width: 680px) {
-      .slides {
-        max-width: 100%;
-      }
-     }
-
      @media screen and (max-width: 800px) {
       .contenido {
          top: 5%;
      }
    }
+
+   @media screen and (max-width: 768px) {
+      .slides {
+        max-width: 100%;
+      }
+     }
+
+     @media screen and (max-width: 600px) {
+      .slides {
+        max-width: 100%;
+      }
+
+      h1{
+         font-size: 1rem;
+         line-height: 20px;
+      }
+
+      p, button {
+         font-size: 0.6rem;
+         line-height: 15px;
+      }
+
+      .bullets {
+         left: 40%;
+      }
+
+      nav {
+         padding-right: 0;
+      }
+
+      .name {
+         font-size: 0.8rem;
+      }
+     }
+
+   

@@ -67,9 +67,4 @@ fetch ("https://api.mercadolibre.com/sites/MLA/search?category=MLA1055")
         })
     };
 
-        
-
-
-/*catch (err)) {
-    console.log(error);*/
 });
