@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 0.8rem;
+    
+}
+
+header {
+    font-size: 1rem;
+    border: 1px solid black;
+    color: cadetblue;
+}
+
+nav {
+    display: grid;
+    min-width: 100px;
+    grid-auto-flow: column;
+    padding-right: 40px;
+}
+
+.name {
+    display: grid;
+    justify-content: end;
+    align-content: center;
+    text-transform: uppercase;
+}
+
+ul {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    height: 100%;
+}
+
+ul li {
+    list-style: none;
+    padding: 10px;
+    height: 100%;
+    
+    text-align: center;
+}
+
+ul li a {
+    text-decoration: none;
+    color: cadetblue;
+}
+
+ul li a:hover {
+    border-bottom: 1px solid cadetblue; 
+    font-weight: bold;  
+}
+
+.product-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10%;
+    row-gap: 2%;
+    grid-auto-rows: 1fr;
+    margin: 5%;
+}
+
+@media screen and (max-width: 500px) {
+    .product-items {
+        margin: 0;
+        padding: 1px;
+        column-gap: 0.5%;
+    }
+}
+
+p {
+    margin: 0.3rem;
+}
+
+.item {
+    display: grid;
+    justify-content: center;
+}
+
+.item img {
+    margin: auto;
+    order: 1;
+}
+
+.item .descount {
+    background-color: #0E564B;
+    width: fit-content;
+    padding: 2px 5px;
+    color: white;
+    border-radius: 5px;
+    order: 2;
+}
+
+.item .price {
+    color: #0E564B;
+    font-weight: bolder;
+    order: 4;
+}
+
+.item .priceAmount {
+    color: #D8D8D8;
+    text-decoration: line-through;
+    order: 5;
+}
+
+.item .title {
+    order: 3;
+}
